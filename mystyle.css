@@ -1,10 +1,42 @@
 :root {
-  --mainColor: #ff9800;
+  --mainColor: #C20029;
 }
 
-.center {
-  margin:0 auto; 
+.lowcenter {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-95%);
+  -webkit-transform: translateX(-50%) translateY(-95%);
+  transform: translateX(-50%) translateY(-95%);
+}
+
+.list {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-45%);
+  -webkit-transform: translateX(-50%) translateY(-45%);
+  transform: translateX(-50%) translateY(-45%);
+}
+
+li.menu-item {
+  margin:0 0 10px 0;   
+}
+
+body {
+  background-image: url("craft-texture-brown-journal-note-min.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  margin:0 auto;
+  margin-top: 80px; 
   text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6em
 }
 
 a {
@@ -20,7 +52,7 @@ a {
 }
 
 a:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23C20029' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 6px;
   background-repeat: repeat-x;
